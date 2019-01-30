@@ -78,4 +78,4 @@ As you can see, the Classifier puts the image in to the most similar category.
 
 We can also see how sure the Classify function is by using `Probabilities`
 
-![New Character](images/probabilities.png)
+![Probabilities](images/probabilities.png)
