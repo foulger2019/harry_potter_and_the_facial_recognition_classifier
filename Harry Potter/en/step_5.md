@@ -7,7 +7,7 @@ Now that you have these two buttons, which allow you to get your own image, eith
 We can use `Grid` to create a good looking interface.
 
 We can construct this using `Grid`.
-Let's look at an easy example of `Grid`
+Let's look at an basic example of `Grid`
 
 ![Grid](images/Grid.png)
 
