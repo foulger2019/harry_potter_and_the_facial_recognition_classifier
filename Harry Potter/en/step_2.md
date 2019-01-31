@@ -71,10 +71,12 @@ It looks like our Classifier is doing quite well. It recognises the characters e
 
 Let's see what the function does when we ask it to classify a photo which is not of one of the characters.
 
-![New Character](images/nevillequeen.png)
+![New Character](images/testsubjects.png)
 
 As you can see, the Classifier puts the image in to the most similar category.
 
-We can also see how sure the Classify function is by using `Probabilities`
+We can also see how sure the Classify function is by using `Probabilities`. This gives the probability that an image belongs to each class. In this case, there is an 89.5% probability that this image fits into the `Harry` class
 
 ![Probabilities](images/probabilities.png)
+
+
