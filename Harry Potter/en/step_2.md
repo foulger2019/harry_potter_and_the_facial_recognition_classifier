@@ -6,10 +6,10 @@ The Wolfram Language can handle a lot of image processing tasks for us, so we do
 Let's look at how the Classify function works.
 First, we need to associate a label to a value.
 
-```exampletrainingdata = {1 -> "A", 2 -> "A", 3.5 -> "B", 4 -> "B"};```
+![Example Training Data](images/exampletrainingdata.png)
 
-If we look at this training data, we can see that 1 and 2 both fit into the category "A", and that 3.5 and 4 both fit into the category "B".
-But we can't tell what category 2.5 or 6 fall into. Classify helps us to make a good guess. Let's train a Classify Function on this training data.
+If we look at this training data, we can see that the colour red fits into the category `"Red"`, and the colour blue fits into the category `"Blue"`
+But we can't tell what category orange falls into, because we haven't told the computer that information. `Classify` helps us to make a good guess. Let's train a Classify Function on this training data.
 
 ``` classified = Classify[exampletrainingdata]```
 
@@ -17,17 +17,15 @@ When you evaluate `classified`, after waiting a few seconds, you should get a `C
 
 ![Example Classifier Function](images/exampleClassifierFunction.png)
 
-The `ClassifierFunction` has categories (Classes) A and B. Let's see how good this Classify Function is at telling us which category a number should go in.
-
-We know that the number 2 fits into category A. But what about numbers we've never told the classify function about?
+The `ClassifierFunction` has categories (Classes) `"Red"` and `"Blue"`. Let's see how good this Classify Function is at telling us which category a new colour should go in.
 
 ![Example Classifier Function Output](images/exampleClassifierOutput.png)
 
-The classify function put the numbers into the category whose members most closely resembled the new number.
+The classify function put the new colour into the category whose members most closely resembled the new colour.
 
-Now that we know what a classify function is, we can apply it to our problem. Instead of numbers, we are going to use images of Harry Potter, Hermionie Granger and Ron Weasley as data for our categories.
+Now that we know what a classify function is, we can apply it to our problem. Instead of colours, we are going to use images of Harry Potter, Hermionie Granger and Ron Weasley as data for our categories.
 
-First, we need to find images of Harry, Ron and Hermione, so that we can train our Classifier to recognise their faces. We can do this by finding the URL to a Google image search, and then using Import to import the images.
+First, we need to find images of Harry, Ron and Hermione, so that we can train our `Classifier` to recognise their faces. We can do this by finding the URL to a Google image search, and then using Import to import the images.
 
 We will then train a classifier function on the images, putting them into three categories: "Harry", "Ron", and "Hermionie".
 --- task ---
