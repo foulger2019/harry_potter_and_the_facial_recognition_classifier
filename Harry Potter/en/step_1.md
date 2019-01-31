@@ -15,7 +15,7 @@ title: What you will need
 ### Hardware
 
 + + Either a desktop computer, laptop, or a Raspberry Pi
-+ You have the option to use a camera (built or external)
++ You have the option to use a camera (built-in or external)
 
 ### Software
 
@@ -29,7 +29,7 @@ title: What you will need
 title: What you will learn
 ---
 
-+ Using `Classify` to build simple machine learning classifications
++ Have the computer figure out the similarity between images
 + Using Wolfram to take photos
 + Using buttons and `Dynamic` to create interactivity
 
