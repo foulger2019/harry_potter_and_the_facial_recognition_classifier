@@ -14,7 +14,7 @@ title: What you will need
 ---
 ### Hardware
 
-+ + Either a desktop computer, laptop, or a Raspberry Pi
++ Either a desktop computer, laptop, or a Raspberry Pi
 + You have the option to use a camera (built-in or external)
 
 ### Software
