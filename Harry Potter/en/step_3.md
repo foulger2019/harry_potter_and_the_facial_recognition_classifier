@@ -46,11 +46,3 @@ Dynamic[character]
 Dynamic[probabilities]
 ```
 --- /task ---
-
---- task---
-Make a button which turns off the camera.
-
-```
-Button["Turn Off my Camera", DeviceClose[First[Devices["Camera"]]]]
-```
----/task---
