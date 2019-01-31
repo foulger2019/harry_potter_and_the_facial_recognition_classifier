@@ -55,4 +55,4 @@ Grid[{
  ```
 ---/task ---
 
-![Interface](images/firstcomplete.png)
+![Interface](images/firstComplete.png)
