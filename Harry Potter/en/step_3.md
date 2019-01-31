@@ -24,10 +24,6 @@ And use `"Probabilities"` to see how likely you are to be each character.
 
 --- /task ---
 
-In order to turn off the camera after you've taken a photo, you'll need to close the camera:
-
-```DeviceClose[First[Devices["Camera"]]]```
-
 --- task ---
 Build a button which takes a photo and runs it through the classifier function.
 
@@ -35,7 +31,7 @@ Build a button which takes a photo and runs it through the classifier function.
 Button["New Photo",
 image = CurrentImage[ImageSize -> 350];
 character = potter[image];
-probabilities = Normal[potter[image, "Probabilities"]]]
+probabilities = potter[image, "Probabilities"]]
 ```
 
 Display the results using `Dynamic`
