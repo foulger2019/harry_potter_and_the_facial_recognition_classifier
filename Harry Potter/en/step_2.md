@@ -28,6 +28,7 @@ Now that we know what a classify function is, we can apply it to our problem. In
 First, we need to find images of Harry, Ron and Hermione, so that we can train our `Classifier` to recognise their faces. We can do this by finding the URL to a Google image search, and then using Import to import the images.
 
 We will then train a classifier function on the images, putting them into three categories: "Harry", "Ron", and "Hermionie".
+
 --- task ---
 
 Create a `Classify` function called `potter` using Google Images search results for each main Harry Potter character.
