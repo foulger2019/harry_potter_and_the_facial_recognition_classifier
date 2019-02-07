@@ -27,10 +27,12 @@ You can use `Framed` and `FrameStyle` to draw a frame around your tool.
 
 If you are using a camera:
 ```
-Framed[Grid[{{Text[Style["Which Harry Potter Character Are You?", Bold, 18]]},
+Framed[Grid[{
+{Text[Style["Which Harry Potter Character Are You?", Bold, 18]]},
 {Dynamic[image]},
 {Text[Style[Dynamic[character], Bold, 18]],
-Button["New Photo", image = CurrentImage[ImageSize -> 350];
+Button["New Photo",
+image = CurrentImage[ImageSize -> 350];
 character = potter[image];
 probabilities = Normal[potter[image, "Probabilities"]]]},
 {Text[Style[Dynamic[probabilities], 14]]}}], FrameStyle -> Thick]
